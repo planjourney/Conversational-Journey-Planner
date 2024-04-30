@@ -15,8 +15,8 @@ import streamlit as st
 import requests
 
 # API keys placeholders
-OPENAI_API_KEY=" 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"
-TFL_API_KEY="df08b74854234ae19d4d25cdd6923acc"
+OPENAI_API_KEY=" xxx"
+TFL_API_KEY="xxx"
 NOW = datetime.now() 
 client = OpenAI(
         api_key = OPENAI_API_KEY)
