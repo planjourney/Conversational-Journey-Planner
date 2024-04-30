@@ -1,2 +1,2 @@
 # Conversational Journey Planner
-The TfL Real-Time Data Project is an innovative application designed to bridge the gap between the complex datasets provided by Transport for London (TfL) and the everyday commuter. 
+The objective is to develop a virtual assistant designed to assist London residents in planning their travels in a user-friendly manner. The goal is to facilitate easier interaction with Transport for London (TfL) services and to provide quick, straightforward access for those who find it challenging to maneuver through application interfaces.
