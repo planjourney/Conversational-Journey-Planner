@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-import httpx
+
 from http import HTTPStatus
 import logging
 import json
