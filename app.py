@@ -38,12 +38,12 @@ st.button("Press for more info", on_click=toggle_info)
 # Display the conversation history
 for message in st.session_state.messages:
     if message["role"] == "user":
-        st.markdown(f"**User**: {message['content']}")
+        st.markdown(f"**You**: {message['content']}")
     else:
-        st.markdown(f"**System**: {message['content']}")
+        st.markdown(f"**TfL journey buddy**: {message['content']}")
 
 # Input text box for user query with a unique key
-user_query = st.text_input(f"User:", key=f"user_input_{st.session_state.user_input_count}")
+user_query = st.text_input(f"You:", key=f"user_input_{st.session_state.user_input_count}")
 
 # Button to submit the query
 if st.button("Send"):
