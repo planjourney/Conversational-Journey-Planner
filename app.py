@@ -68,5 +68,5 @@ if st.button("Send"):
         st.session_state.user_input_count += 1
 
         # Rerun to update the chat
-        st.experimental_rerun()
+        st.rerun()
 
