@@ -7,8 +7,6 @@
 from http import HTTPStatus
 from typing import Any, Dict, List, Optional, Union
 
-import httpx
-
 from journey_client.api.journey.journey_journey_results_by_path_from_path_to_query_via_query_national_search_query_date_qu import (
     sync_detailed as original_sync_detailed,
 )
