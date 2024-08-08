@@ -87,5 +87,8 @@ if submit_button:
     df.to_csv('feedback.csv', mode='a', header=False, index=False)
     st.sidebar.success("Thank you for your feedback!")
 
+# Add the acknowledgment at the end
+st.markdown("---")
+st.markdown("Powered by the [Transport for London Journey Planner API](https://api-portal.tfl.gov.uk/apis)")
 
 
