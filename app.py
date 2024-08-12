@@ -15,7 +15,7 @@ def toggle_info():
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": ("Please share your starting point and your intended destination. ")}
+        {"role": "system", "content": ("How can I help you today? ")}
     ]
 if "user_input_count" not in st.session_state:
     st.session_state["user_input_count"] = 1
