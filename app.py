@@ -21,7 +21,7 @@ if "user_input_count" not in st.session_state:
     st.session_state["user_input_count"] = 1
 
 # Streamlit application setup
-st.title('Conversational Journey Planner for Londoners')
+st.title('Smart Journey Planner for London')
 
 # Display the information if the button is clicked
 if "show_info" in st.session_state and st.session_state["show_info"]:
@@ -35,9 +35,9 @@ st.button("Press for more info", on_click=toggle_info)
 # Display the conversation history
 for message in st.session_state.messages:
     if message["role"] == "user":
-        st.markdown(f"**User**: {message['content']}")
+        st.markdown(f"**You**: {message['content']}")
     else:
-        st.markdown(f"**System**: {message['content']}")
+        st.markdown(f"**Journeywise**: {message['content']}")
 
 # Input text box for user query with a unique key
 user_query = st.text_input(f"User:", key=f"user_input_{st.session_state.user_input_count}")
