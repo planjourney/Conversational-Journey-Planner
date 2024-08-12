@@ -15,7 +15,7 @@ def toggle_info():
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": ("How can I help you today? ")}
+        {"role": "system", "content": ("Hi. I'm your Journey Buddy. How can I help you today? ")}
     ]
 if "user_input_count" not in st.session_state:
     st.session_state["user_input_count"] = 1
@@ -37,7 +37,7 @@ for message in st.session_state.messages:
     if message["role"] == "user":
         st.markdown(f"**You**: {message['content']}")
     else:
-        st.markdown(f"**Journey Planner**: {message['content']}")
+        st.markdown(f"**Journey Buddy**: {message['content']}")
 
 # Input text box for user query with a unique key
 user_query = st.text_input(f"User:", key=f"user_input_{st.session_state.user_input_count}")
